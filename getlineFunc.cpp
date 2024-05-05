@@ -17,4 +17,5 @@ int main(){
             cout<<name<<endl;
         }
     }
+    input.close();
 }
