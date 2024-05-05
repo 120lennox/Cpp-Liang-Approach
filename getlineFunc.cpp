@@ -1,17 +1,19 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 //simple getline structure 
 
 int main(){
     ifstream input;
-
-    input.open("testFile.txt");
     string name;
 
-    if (!input.fail()){
-        while(!input.eof()){
-            getline(input, name);
+    input.open("testFile.txt");
+    if (input.fail()){
+        cout<<"file does not exist \n";
+    }
+    else{
+        while(getline(input, name)){
             cout<<name<<endl;
         }
     }
