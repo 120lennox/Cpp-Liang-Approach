@@ -4,9 +4,11 @@ using namespace std;
 void play(){
     int x = 2;
     int y = 5;
+    int z = 90;
 
     int* pX = &x;
     int* pY = &y;
+
 
     cout<<"Address of pY: "<<pY<<endl;
 
@@ -18,6 +20,10 @@ void play(){
     *pX = *pY;
     cout<<"Address of *pX: "<<*pX<<endl;
 
+}
+
+void custom_types(){
+    //creating syno
 }
 
 void testPointers(){
