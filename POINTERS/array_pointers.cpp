@@ -27,10 +27,11 @@ void arr_is_pointer(){
  * this function defines an array pointer
 */
 void array_pointers(){
-   string* names[] = {"Lennox", "Joshua", "Tim"};
-   cout<<"What is names[0]"<<names[0]<<endl; 
+    char* names[] = {"Lenox", "Josh", "Tim"};
+   cout<<"What is names[0]"<<names[0][0]<<endl; 
 }
 
 int main(){
-    arr_is_pointer();
+    //arr_is_pointer();
+    array_pointers();
 }
