@@ -23,7 +23,15 @@ void play(){
 }
 
 void custom_types(){
-    //creating syno
+    //customizing datatypes using typedef keyword 
+    typedef int integer;
+    integer number = 10;
+
+    typedef int* integerPointer;
+    integerPointer pNum = &number;
+    cout<<number<<endl;
+    cout<<number<<endl;
+
 }
 
 void testPointers(){
