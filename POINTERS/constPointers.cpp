@@ -25,7 +25,26 @@ void const_ptr_two(){
     double decimal = 22.45;
     const double* pNumber = &number;
 
+    //you can change the address of pNumber
+    pNumber = &decimal; //pNumber is not constant
+
+    // but you cannot change the data pNumber is pointing to because it is constant 
+
+    //*pNumber = decimal; 
+
+    // here you get an error because the data being referenced to is constant
+
+    //However you can make both the pointer and the data it references a pointer too. Here is how
+    int age = 20;
+    int age2 = 25;
+
+    const int* const pAge = &age;
+    //in this approach you cannot the change the address of the pointer and the data it points like
+
+    // *pAge = age2;
+    // pAge = &age;
     
+    //all this is wring 
 
     cout<<number<<endl;
 }
