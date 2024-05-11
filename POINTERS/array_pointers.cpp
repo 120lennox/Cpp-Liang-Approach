@@ -4,7 +4,9 @@
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
+
 
 /**
  * arr_is_pointer: proves that an array name is a pointer to first element of an array
@@ -19,6 +21,14 @@ void arr_is_pointer(){
     //you remember how ? *pName. 
     //Now lets print the all the values of the pointer without using  the loop. 
     cout<<"Elements in list: "<<*(list)<<", "<< *(list + 1)<<", "<< *(list + 2)<<", "<< *(list + 3)<<", "<< *(list + 4)<<", "<< *(list + 5)<<endl;
+}
+
+/**
+ * this function defines an array pointer
+*/
+void array_pointers(){
+   string* names[] = {"Lennox", "Joshua", "Tim"};
+   cout<<"What is names[0]"<<names[0]<<endl; 
 }
 
 int main(){
