@@ -42,14 +42,28 @@ int main(){
     int num1 = 5; 
     int num2 = 10;
 
-    int temp = num1;
-    num1 = num2;
-    num2 = temp;
-
-    cout<<"Value of num1 before swap: "<<num1<<endl;
-    cout<<"Value of num2 before swap: "<<num2<<endl;
+    // cout<<"Value of num1 before swap: "<<num1<<endl;
+    // cout<<"Value of num2 before swap: "<<num2<<endl;
 
     // swapBy_value(num1, num2);
     // cout<<"Value of num1 after swap: "<<num1<<endl;
     // cout<<"Value of num2 after swap: "<<num2<<endl;
+
+    // swapBy_reference(num1, num2);
+    // cout<<"Value of num1 after swap: "<<num1<<endl;
+    // cout<<"Value of num2 after swap: "<<num2<<endl;
+
+    int* pNum = &num1;
+    int* pNum2 = &num2;
+    cout<<"------------------Before Swapping----------------------"<<endl;
+    cout<<"Value of num1 after swap: "<<num1<<endl;
+    cout<<"Value of num2 after swap: "<<num2<<endl;
+    cout<<"Value of pointer 1 before swapping: "<<pNum<<endl;
+    cout<<"Value of pointer 2 before swapping: "<<pNum2<<endl;
+    swapBy_pointer(pNum, pNum2);
+    cout<<"------------------POINTERS after Swapping----------------------"<<endl;
+    cout<<"Value of num1 after swap: "<<num1<<endl;
+    cout<<"Value of num2 after swap: "<<num2<<endl;
+    cout<<"Value of pointer 1 after swapping: "<<pNum<<endl;
+    cout<<"Value of pointer 2 after swapping: "<<pNum2<<endl;
 }
