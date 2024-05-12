@@ -1,5 +1,6 @@
 #include "Student.H"
 #include <string>
+#include <cstring>
 using namespace std;
 
 //this is class instantiation. using the the default constructor
