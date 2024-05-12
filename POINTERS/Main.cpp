@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(){
-    Student();
     Student student1;
 
     student1.fName = "Lennox";

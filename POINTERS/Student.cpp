@@ -17,6 +17,11 @@ Student::Student(){
     marital_status = "";
 }
 
+//defining default destructor
+Student::~Student(){
+    cout<<"Object destroyed"<<endl;
+}
+
  //defining methods
  /*
  Note: the add_course method has been defined outside the constructor. this saves you alot of errors
