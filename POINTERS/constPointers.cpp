@@ -8,48 +8,41 @@ using namespace std;
 
 void const_ptr_one(){
     int number = 10;
+    int age = 40;
 
-    //const ptr
+    
+    /*
+    defined is not a constant pointer, but the value the pointer is pointing is what is constant 
+    */ 
     const int* pNum = &number;
 
-    //Value of number can change 
-    number = 20;
+    // *Num = 20; this one here throws an error 
 
-    cout<<"number "<<number<<endl;
-    cout<<"pNum: "<<pNum<<endl;
-}
+    // the pointer is not constant hence it can change
+    pNum = &age;
 
-void const_ptr_two(){
-    //here you can make data being referenced constant too
-    double number = 12;
-    double decimal = 22.45;
-    const double* pNumber = &number;
+    //to declare a constant pointer proceed as follows 
+    double count = 0;
+    double decimal = 12.33;
 
-    //you can change the address of pNumber
-    pNumber = &decimal; //pNumber is not constant
+    //constant pointer 
+    double* const pCount = &count;
 
-    // but you cannot change the data pNumber is pointing to because it is constant 
+    //this way you cannot change the address of the pointer 
+    // pCount = &decimal;
 
-    //*pNumber = decimal; 
+    //but you can change the data the pointer is pointing to 
+    *pCount = 22.99;
 
-    // here you get an error because the data being referenced to is constant
+    //to make both pointer and data it is pointing to constant, proceed as follows 
+    float dates = 12;
+    float groups = 100;
 
-    //However you can make both the pointer and the data it references a pointer too. Here is how
-    int age = 20;
-    int age2 = 25;
+    const float* const pDates = &dates;
 
-    const int* const pAge = &age;
-    //in this approach you cannot the change the address of the pointer and the data it points like
-
-    // *pAge = age2;
-    // pAge = &age;
-    
-    //all this is wring 
-
-    cout<<number<<endl;
+    //this way you cannot alter with both the pointer and the data it is pointing to 
 }
 
 int main(){
-    //const_ptr_one();
-    const_ptr_two();
+    const_ptr_one();
 }
