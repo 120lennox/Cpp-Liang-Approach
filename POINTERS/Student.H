@@ -15,12 +15,10 @@ class Student{
 
         void add_course(string course1, string course2, string course3);
         void drop_course(string course_name);
+        ~Student();
     
     private:
         string phone_number;
         string marital_status;
-    
-    //destructor;
-    ~Student();
 
 };
