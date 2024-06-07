@@ -10,7 +10,7 @@ class Rhombus:public GeometriObject{
         double diagonal2;
     public:
         Rhombus();
-        Rhombus(double d1, double d2);
+        Rhombus(double d1, double d2, string& color, bool filled);
         ~Rhombus();
         double getDiagonal1();
         double getDiagonal2();
