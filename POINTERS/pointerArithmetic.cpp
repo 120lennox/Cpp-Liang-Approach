@@ -20,15 +20,21 @@ void ptr_arithmetic(){
     cout<<"age address before: "<<pAge<<endl;
 
     //alteration
-    pNumber = pNumber + 3;
-    pAge = pAge + 3;
+    pNumber = pNumber + 1;
+    pAge = pAge + 1;
     
     //print after alteration
     cout<<"___-----------__________---------________-------"<<endl;
     cout<<"number after: "<<number<<endl;
     cout<<"age after: "<<age<<endl;
-    cout<<"number address after: "<<pNumber<<endl;
-    cout<<"age address after: "<<pAge<<endl;
+    cout<<"number address after: "<<*pNumber<<endl;
+    cout<<"age address after: "<<*pAge<<endl;
+    //the values of age and number wont be the same because now because the pointer points to another different value
+
+}
+
+//addition pointer arithmetic 
+void add_ptr_arithmetic(){
 
 }
 
