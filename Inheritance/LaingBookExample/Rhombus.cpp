@@ -1,4 +1,5 @@
 #include "Rhombus.H"
+#include <cmath>
 
 Rhombus::Rhombus(){
     diagonal1 = 0;
@@ -11,6 +12,8 @@ Rhombus::Rhombus(double diagonal1, double diagonal2, string& color, bool filled)
     setFilled(filled);
     setColor(color);
 }
+
+Rhombus::~Rhombus(){};
 
 void Rhombus::setDiagonal1(double diagonal1){
     this->diagonal1 = diagonal1;
@@ -31,3 +34,4 @@ double Rhombus::getDiagonal2(){
 double Rhombus::getArea() const{
     return (diagonal1 * diagonal2) / 2;
 }
+

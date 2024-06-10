@@ -17,7 +17,7 @@ class Rhombus:public GeometriObject{
         void setDiagonal1(double diagonal1);
         void setDiagonal2(double diagonal2);
         double getArea() const;
-        double getPerimeter() const;
+        
 };
 
 #endif
