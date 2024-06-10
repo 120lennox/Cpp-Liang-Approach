@@ -35,9 +35,12 @@ void ptr_arithmetic(){
 
 //addition pointer arithmetic 
 void add_ptr_arithmetic(){
-
+    int *pPointer = nullptr;
+    int pPointer2 = *pPointer;
+    cout<<pPointer2<<endl;
 }
 
 int main(){
-    ptr_arithmetic();
+    //ptr_arithmetic();
+    add_ptr_arithmetic();
 }
