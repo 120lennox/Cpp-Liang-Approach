@@ -5,16 +5,16 @@
 
 using namespace std;
 
-class classPtr{
+class ClassPtr{
     private:
         string fname;
         string lname;
         int age;
     
     public:
-        classPtr();
-        classPtr(string fname, string lname, int age);
-        ~classPtr();
+        ClassPtr();
+        ClassPtr(string fname, string lname, int age);
+        ~ClassPtr();
         void setFname(string fname);
         void setLname(string lname);
         void setAge(int age);
