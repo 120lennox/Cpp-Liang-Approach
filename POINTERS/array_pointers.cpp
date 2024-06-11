@@ -31,7 +31,17 @@ void array_pointers(){
    cout<<"What is names[0]"<<names[0][0]<<endl; 
 }
 
+//Refferences
+void refferences(){
+    int number = 12;
+    int& rNumber = number;
+    rNumber = 23345;
+    cout<<"The value of number is: "<<number<<endl;
+    
+}
+
 int main(){
     //arr_is_pointer();
-    array_pointers();
+    //array_pointers();
+    refferences();
 }
